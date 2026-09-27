@@ -14,8 +14,6 @@ Built using the **Medallion Architecture pattern (Bronze $\rightarrow$ Silver $\
 
 
 ```
-
-```
    +-----------------------------------------------------------------+
    |                       RAW DATA SOURCES                          |
    |             (E-Commerce Orders, Customers, Products)            |
@@ -142,8 +140,5 @@ Project_Ecommerce/
 4. Sequentially execute fact scripts in order:
 * `3_medallion_processing_fact/1_fact_bronze.py`
 * `3_medallion_processing_fact/2_fact_silver.py`
-* `3_medallion_processing_fact/3_fact_gold.py`
-
-
-
+* `3_medallion_processing_fact/3_fact_gold.py` 
 ```
