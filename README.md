@@ -13,16 +13,15 @@ This repository contains a full-lifecycle Data Engineering pipeline designed to 
 Built using the **Medallion Architecture pattern (Bronze $\rightarrow$ Silver $\rightarrow$ Gold)**, the pipeline isolates raw data ingestion, schema enforcement/data cleansing, and final analytical aggregation into distinct computational layers.
 
 
+
+
 ```
    +-----------------------------------------------------------------+
    |                       RAW DATA SOURCES                          |
    |             (E-Commerce Orders, Customers, Products)            |
    +-----------------------------------------------------------------+
-                                   |
-                                   v
-
-```
-
+|
+v
 +-------------------------------------------------------------------------+
 |  BRONZE LAYER (Append-Only / Raw Ingestion)                             |
 |  - Autoloader/Stream ingestion into raw Delta tables                    |
