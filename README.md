@@ -140,4 +140,3 @@ Project_Ecommerce/
 * `3_medallion_processing_fact/1_fact_bronze.py`
 * `3_medallion_processing_fact/2_fact_silver.py`
 * `3_medallion_processing_fact/3_fact_gold.py` 
-```
