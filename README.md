@@ -20,31 +20,31 @@ Built using the **Medallion Architecture pattern (Bronze $\rightarrow$ Silver $\
    |                       RAW DATA SOURCES                          |
    |             (E-Commerce Orders, Customers, Products)            |
    +-----------------------------------------------------------------+
-|
-v
+                                 |
+                                 v
 +-------------------------------------------------------------------------+
 |  BRONZE LAYER (Append-Only / Raw Ingestion)                             |
 |  - Autoloader/Stream ingestion into raw Delta tables                    |
 |  - Preserves exact source schema and audit metadata (_ingest_timestamp)  |
 +-------------------------------------------------------------------------+
-|
-v
+                                 |
+                                 v
 +-------------------------------------------------------------------------+
 |  SILVER LAYER (Cleansed & Enriched)                                     |
 |  - Schema enforcement, null handling, and type casting                  |
 |  - Deduplication via Delta Merge (SCD Type 1/2)                         |
 |  - Data quality constraints and validation checks                       |
 +-------------------------------------------------------------------------+
-|
-v
+                                 |
+                                 v
 +-------------------------------------------------------------------------+
 |  GOLD LAYER (Business-Ready Analytics)                                  |
 |  - Star-schema dimensional modeling (Fact & Dimension tables)           |
 |  - Pre-aggregated KPIs for Executive and BI dashboards                 |
 |  - Query performance optimization via Z-Ordering                        |
 +-------------------------------------------------------------------------+
-|
-v
+                                 |
+                                 v
 +-----------------------------------------------------------------+
 |                  BI DASHBOARDS & DOWNSTREAM AD-HOC               |
 |                (Power BI, Tableau, Databricks SQL)               |
